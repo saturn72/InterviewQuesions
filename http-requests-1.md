@@ -1,4 +1,4 @@
-We have this that invokes the following code:
+We have a middleware that invokes the following code:
 ```
  public Task Invoke(HttpContext context)
  {
