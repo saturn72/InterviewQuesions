@@ -2,7 +2,7 @@ We have a middleware that invokes the following code:
 ```
  public Task Invoke(HttpContext context)
  {
-     var wc = context.RequestRequiredServices.GetService<IWorkContext>();
+     var wc = context.RequestRequiredServices<IWorkContext>();
      _ = DoSomethingSmartAsync(wc);
      return _next(context);
  }
